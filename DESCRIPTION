@@ -1,0 +1,30 @@
+Package: DrugSim2DR
+Type: Package
+Title: Predict Drug Functional Similarity to Drug Repurposing
+Version: 0.1.1
+Maintainer: Junwei Han <hanjunwei1981@163.com>
+Authors@R: c(person(given = "Junwei", family = "Han", email = "hanjunwei1981@163.com", role  = c("aut", "cre", "cph")),
+             person(given = "Ji", family = "Li", role  = "aut"),
+             person(given = "Jiashuo", family = "Wu", role  = "aut"))
+Description: A systematic biology tool was developed to repurpose drugs via a drug-drug functional similarity network. 'DrugSim2DR' first predict drug-drug functional similarity  in the context of specific disease, and then using the similarity constructed a weighted drug similarity network. Finally, it used a network propagation algorithm on the network to identify drugs with significant target abnormalities as candidate drugs.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: 
+    igraph,
+    stats,
+    pheatmap,
+    ChemmineR,
+    rvest,
+    base,
+    sp,
+    tidyr,
+    reshape2,
+    fastmatch
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Depends: 
+    R (>= 3.6)
